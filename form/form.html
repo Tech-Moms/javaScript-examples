@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Examples</title>
+    <link rel="stylesheet" href="form-style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <a href="../index.html">Colors</a>
+        <a href="/table/table.html">Table</a>
+        <a href="#" class="active">Form</a>
+    </div>
+
+    <form onsubmit="return submitForm()">
+        <div class="form-field">
+            <div class="label">
+                Name (max 10 characters):
+            </div>
+            <div>
+                <input 
+                    type="text" 
+                    class="form-input" 
+                    id="name" size="40" 
+                    name="name">
+                <br>
+                <div 
+                    id="lengthError" 
+                    style="color: red">
+                </div>
+                <br>
+            </div>
+        </div>
+
+        <div class="form-field">
+            <div class="label">
+                Age (from 1 to 100):
+            </div>
+            <div>
+                <input 
+                    type="text" 
+                    class="form-input" 
+                    id="age" 
+                    size="40" 
+                    name="age">
+                <br>
+                <div 
+                    id="ageError" 
+                    style="color: red">
+                </div>
+                <br>
+            </div>
+        </div>
+
+        <div class="form-field">
+            <div class="label">
+                E-mail:
+            </div>
+            <div>
+                <input 
+                    type="text" 
+                    class="form-input" 
+                    id="email" size="40" 
+                    name="mail">
+                <br>
+                <div 
+                    id="emailError" 
+                    style="color: red">
+                </div>
+                <br>
+            </div>
+        </div>
+
+        <div class="center-btn">
+            <input 
+                type="submit" 
+                class="submit-btn" 
+                value="Submit">
+        </div>
+    </form>
+
+    <script src="form.js"></script>
+</body>
+
+</html>
