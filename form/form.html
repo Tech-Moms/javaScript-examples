@@ -12,76 +12,56 @@
 <body>
     <div class="nav">
         <a href="../index.html">Colors</a>
-        <a href="/table/table.html">Table</a>
+        <a href="../table/table.html">Table</a>
         <a href="#" class="active">Form</a>
     </div>
 
-    <form onsubmit="return submitForm()">
-        <div class="form-field">
-            <div class="label">
-                Name (max 10 characters):
-            </div>
-            <div>
-                <input 
-                    type="text" 
-                    class="form-input" 
-                    id="name" size="40" 
-                    name="name">
-                <br>
-                <div 
-                    id="lengthError" 
-                    style="color: red">
+    <div>
+        <form onsubmit="return submitForm()">
+            <div class="form-field">
+                <div class="label">
+                    Name (max 10 characters):
                 </div>
-                <br>
-            </div>
-        </div>
-
-        <div class="form-field">
-            <div class="label">
-                Age (from 1 to 100):
-            </div>
-            <div>
-                <input 
-                    type="text" 
-                    class="form-input" 
-                    id="age" 
-                    size="40" 
-                    name="age">
-                <br>
-                <div 
-                    id="ageError" 
-                    style="color: red">
+                <div>
+                    <input type="text" class="form-input" id="name" size="40" name="name">
+                    <br>
+                    <div id="lengthError" style="color: red">
+                    </div>
+                    <br>
                 </div>
-                <br>
             </div>
-        </div>
 
-        <div class="form-field">
-            <div class="label">
-                E-mail:
-            </div>
-            <div>
-                <input 
-                    type="text" 
-                    class="form-input" 
-                    id="email" size="40" 
-                    name="mail">
-                <br>
-                <div 
-                    id="emailError" 
-                    style="color: red">
+            <div class="form-field">
+                <div class="label">
+                    Age (from 1 to 100):
                 </div>
-                <br>
+                <div>
+                    <input type="text" class="form-input" id="age" size="40" name="age">
+                    <br>
+                    <div id="ageError" style="color: red">
+                    </div>
+                    <br>
+                </div>
             </div>
-        </div>
 
-        <div class="center-btn">
-            <input 
-                type="submit" 
-                class="submit-btn" 
-                value="Submit">
-        </div>
-    </form>
+            <div class="form-field">
+                <div class="label">
+                    E-mail:
+                </div>
+                <div>
+                    <input type="text" class="form-input" id="email" size="40" name="mail">
+                    <br>
+                    <div id="emailError" style="color: red">
+                    </div>
+                    <br>
+                </div>
+            </div>
+
+            <div class="center-flex">
+                <input type="submit" class="submit-btn" value="Submit">
+            </div>
+        </form>
+    </div>
 
     <script src="form.js"></script>
 </body>

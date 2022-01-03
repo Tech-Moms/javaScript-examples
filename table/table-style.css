@@ -1,11 +1,11 @@
 body {
-    width: 500px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 .nav {
+    height: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     font-size: 18px;
     font-weight: bold;
@@ -15,15 +15,16 @@ body {
 a {
     color: #333;
     text-decoration: none;
+    margin: 25px;
 }
 
 .active {
     color: gray
 }
 
-.center-btn {
-    margin: auto;
-    width: 35%;
+.center-flex {
+    display: flex;
+    justify-content: center;
 }
 
 button {
@@ -34,6 +35,11 @@ button {
     font-size: 18px;
     color: #fff;
     cursor: pointer;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 table {

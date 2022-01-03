@@ -1,26 +1,24 @@
+// data we would get from a server. We'd make an api call to get this data.
 const techMoms = [
-    { firstName: 'Tiff', lastName: 'Cameron' },
-    { firstName: 'Jackie', lastName: 'Smith' },
-    { firstName: 'Brooke', lastName: 'Mckeever' },
-    { firstName: 'Calle', lastName: 'Larson' },
-    { firstName: 'Laurie', lastName: 'Mecham' },
-    { firstName: 'Anna', lastName: 'Gregory' },
-    { firstName: 'Destiny', lastName: 'Kerr' },
-    { firstName: 'Carrie', lastName: 'Johnson' },
-    { firstName: 'Sherrie', lastName: 'Hall' },
-    { firstName: 'Ashli', lastName: 'Jones' },
-    { firstName: 'Monica', lastName: 'Parkinson' },
-    { firstName: 'Jen', lastName: 'Smith' },
-    { firstName: 'Katie', lastName: 'Swenson' },
-    { firstName: 'Yolanda', lastName: 'Rowberry' },
-    { firstName: 'Sandra', lastName: 'Hadlock' },
-    { firstName: 'Amber', lastName: 'Watts' }
-]
+    { name: 'Mickey', species: 'Mouse' },
+    { name: 'Dumbo', species: 'Elephant' },
+    { name: 'Bambi', species: 'Deer' },
+    { name: 'Babe', species: 'Pig' },
+    { name: 'Sebastian', species: 'Crab' },
+    { name: 'Mushu', species: 'Dragon' },
+    { name: 'Simba', species: 'Lion' },
+    { name: 'Abu', species: 'Monkey' },
+    { name: 'Abu', species: 'Monkey' },
+    { name: 'Bruce', species: 'Shark' },
+];
+
 
 function generateTable() {
     var tblBody = document.getElementById("table-body");
 
     for (var row = 0; row < techMoms.length; row++) {
+        console.log(`Index: ${row}`, techMoms[row]);
+
         // creates a table row
         var tbRow = document.createElement("tr");
 
@@ -28,9 +26,9 @@ function generateTable() {
             // creates table data
             var cell = document.createElement("td");
             if (column == 0) {
-                var tableData = document.createTextNode(techMoms[row].firstName);
+                var tableData = document.createTextNode(techMoms[row].name);
             } else {
-                var tableData = document.createTextNode(techMoms[row].lastName);
+                var tableData = document.createTextNode(techMoms[row].species);
             }
 
             if (row % 2 == 0) {

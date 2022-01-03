@@ -1,11 +1,11 @@
 body {
-    width: 500px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 .nav {
+    height: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     font-size: 18px;
     font-weight: bold;
@@ -15,6 +15,7 @@ body {
 a {
     color: #333;
     text-decoration: none;
+    margin: 0 25px;
 }
 
 .active {
@@ -57,9 +58,9 @@ a {
     cursor: pointer;
 }
 
-.center-btn {
-    margin: auto;
-    width: 20%;
+.center-flex {
+    display: flex;
+    justify-content: center;
 }
 
 .reset-btn {

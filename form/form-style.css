@@ -1,11 +1,11 @@
 body {
-    width: 500px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 .nav {
+    height: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     font-size: 18px;
     font-weight: bold;
@@ -15,29 +15,36 @@ body {
 a {
     color: #333;
     text-decoration: none;
+    margin: 0 25px;
 }
 
 .active {
     color: gray;
 }
 
+.center {
+    width: 500px; 
+    margin: 0 auto;
+}
+
 .form-field {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: top;
 }
 
 .label {
     line-height: 20px;
+    width: 200px;
 }
 
 .form-input {
     height: 20px;
 }
 
-.center-btn {
-    margin: auto;
-    width: 20%;
+.center-flex {
+    display: flex;
+    justify-content: center;
 }
 
 .submit-btn {
